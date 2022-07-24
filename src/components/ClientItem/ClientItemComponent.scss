@@ -1,0 +1,16 @@
+.channels-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.channels-list__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #29CC97;
+  margin: 4px;
+  min-width: 32px;
+  padding: 1%;
+  border-radius: 8px;
+}

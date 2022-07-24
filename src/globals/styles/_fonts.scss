@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Roboto:wght@100&display=swap');
+
+@mixin font-style-h1 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  color: #252733;
+  font-size: 16px;
+}
+
+@mixin font-style-h2 {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  color: #252733;
+  font-size: 14px;
+}
+
+@mixin font-style-td {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  color: #9FA2B4;
+  font-size: 12px;
+}
+
+@mixin font-style-span {
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 8px;
+}
+
+h1 {
+  @include font-style-h1;
+}
+
+h2 {
+  @include font-style-h2;
+}
+
+td {
+  @include font-style-td;
+}
+
+span {
+  @include font-style-span;
+}
+
+@media screen and (min-width: 640px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  td {
+    font-size: 25px; 
+  }
+
+  span {
+    font-size: 12px;
+  }
+}
+
