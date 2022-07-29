@@ -2,7 +2,7 @@
 
 @mixin font-style-h1 {
   font-family: 'Mulish', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   color: #252733;
   font-size: 16px;
 }
@@ -14,7 +14,7 @@
   font-size: 14px;
 }
 
-@mixin font-style-td {
+@mixin font-style-paragraph {
   font-family: 'Mulish', sans-serif;
   font-weight: 700;
   color: #9FA2B4;
@@ -37,8 +37,8 @@ h2 {
   @include font-style-h2;
 }
 
-td {
-  @include font-style-td;
+td, p {
+  @include font-style-paragraph;
 }
 
 span {
@@ -47,14 +47,14 @@ span {
 
 @media screen and (min-width: 640px) {
   h1 {
-    font-size: 32px;
+    font-size: 34px;
   }
 
   h2 {
-    font-size: 30px;
+    font-size: 28px;
   }
 
-  td {
+  td, p {
     font-size: 25px; 
   }
 

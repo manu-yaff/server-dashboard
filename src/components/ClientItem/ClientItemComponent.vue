@@ -4,7 +4,7 @@
     <td>{{ client.Ip }}</td>
     <td>{{ client.Date }}</td>
     <td v-if="!client.Channels || !client.Channels.length">
-      Client is not connected to any channel
+      Client's not connected to any channel
     </td>
     <td v-else class="channels-list">
       <span
